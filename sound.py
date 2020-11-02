@@ -117,7 +117,7 @@ m_mass = molar_mass(
 plt.bar(
     range(1, len(data)+1),
     data,
-    yerr=std,
+    yerr=2 * std,
     bottom=offset,
     color="#0000cc"
 )
@@ -133,7 +133,7 @@ plt.xticks(range(0, len(data) + 1, 5))
 
 plt.legend()
 
-plt.title("Measured Speed of Sound")
+plt.title("Wyznaczanie prędkości dźwięku")
 plt.xlabel("Numer pomiaru")
 plt.ylabel("prędkość dźwięku [m/s]")
 
